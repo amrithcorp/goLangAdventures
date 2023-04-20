@@ -1,0 +1,26 @@
+database : 
+  port : 0
+  name : ""
+  user : ""
+  pass : ""
+  host : ""
+task_queue :
+  host : ""
+  user : ""
+  pass : ""
+  db : 0
+microservice_permissions :
+  wallet : {
+    "can_create_user" : true,
+    "can_ping_server" : true,
+    "can_get_user" : true
+    "can_update_payment_request" : false
+  }
+  worker : {
+    "can_create_user" : false,
+    "can_ping_server" : true,
+    "can_get_user" : true
+    "can_update_payment_request" : true
+  }
+
+# Remove the .blank. between config and .yml after filling in config
